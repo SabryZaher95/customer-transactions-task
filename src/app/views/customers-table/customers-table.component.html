@@ -1,0 +1,24 @@
+<h1 class="text-center mb-5">Customers List with their Transactions</h1>
+
+<input class="form-control" type="search" placeholder="Search by Customer Name or Transaction Amount">
+
+<table class="table table-bordered table-striped table-hover">
+  <thead class="table-light text-center">
+    <tr>
+      <th scope="col">Customer Id</th>
+      <th scope="col">Customer Name</th>
+      <th scope="col">Total Amount</th>
+      <th scope="col">View Chart</th>
+    </tr>
+  </thead>
+  <tbody class="text-center">
+    <tr *ngFor="let customer of customersWithTransactions; let i = index">
+      <td>{{ customer.id }}</td>
+      <td>{{ customer.name }}</td>
+      <td>{{ customer.totalAmount }}</td>
+      <!-- <td><a class="btn btn-outline-info" [routerLink]="['/transaction', customer.id]">View</a></td> -->
+      <td><button class="btn btn-outline-info" (click)="viewTransaction(customer.id)">View</button></td>
+    </tr>
+  </tbody>
+</table>
+<!-- <router-outlet></router-outlet> -->
