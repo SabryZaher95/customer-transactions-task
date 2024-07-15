@@ -8,6 +8,7 @@ import { CustomersTableComponent } from './views/customers-table/customers-table
 import { TransactionsChartComponent } from './views/transactions-chart/transactions-chart.component';
 import { SearchPipe } from './core/pipes/search.pipe';
 import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     CustomersTableComponent,
     TransactionsChartComponent,
-    SearchPipe
+    SearchPipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

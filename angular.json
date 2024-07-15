@@ -33,7 +33,9 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -97,6 +99,14 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/customer-transactions-task",
+            "netlifyToken": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC0+Oe9zuE2CPSNYMglMmoXdODz/+zPHlRcGPSx1dGQE+BMv8ThKwz/R0OHnp89j38nfMDSNaYb7wRuhzQnMpYT3gL5MFpjfMlVup4Clobrc80u5lJ4HA4ghe09Xok12zwAuqgllqqViXQEHWSYkmN+kWK8BkTwBFsy4iE3ZRKl4w7q9N9diwKIRw1Flbe23hS3h2RnhtL6r+y5AquHxUoN5E7p4gHIN9WQFCfl6pjZoxsoctwh+fUG7pioPtS/pOFJ13p08UnXgAoUbl7mQf/bHuNfA0HFzp1UK0PG3Ws+EgrMLxuXFQi5ahoqp7jJu0cgGPI0M/j1x5G9Z9kg2fbFRpyZWoYtFX9oXjh/KH3eCaX89HfnCqn9ylt9qUAgM47P9z2XHdn9HJyHFTK8idWFI0jYHj7OPqmucxvIH8rAUJDy2CeurjiI7b7NRkDERM8MFzBVW5Tb9n/obilH+40VteaHGKc1ODVdAE7DGai44f5lDpr5RvKlrhN4pHYn9kmHgcwx2fZ9Bz25tpjVJ2ZX3Pj6y80JU0eJipUE33uJh3v8fZ07lvny/fPCGR/fJZ0EjGjCu4wH3MDRVuUnCWzzj1RJygJT3QOE5VJtBnwTrg+vgMpoCNGv5tepZjgsUas7Dec+TqNV12XAmVqMOK5vSaVyF7TLKm0Q3hlKmhKJ/Q==",
+            "siteId": ""
           }
         }
       }
