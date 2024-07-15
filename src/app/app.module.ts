@@ -6,18 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomersTableComponent } from './views/customers-table/customers-table.component';
 import { TransactionsChartComponent } from './views/transactions-chart/transactions-chart.component';
+import { SearchPipe } from './core/pipes/search.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomersTableComponent,
-    TransactionsChartComponent
+    TransactionsChartComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
